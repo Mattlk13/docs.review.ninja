@@ -1,6 +1,5 @@
 ---
 layout: default
-title: Quickstart
 ---
 
 <h1 id="quickstart">Quickstart</h1>

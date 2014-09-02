@@ -18,8 +18,7 @@ Why should I use ReviewNinja?
 
 ReviewNinja defines a clear process for code review in GitHub. It also provides a status overview so that team members in other departments, such as product management or design, can quickly grasp the state of the project.
 
-<h1 id="license">License
-</h1>
+<h1 id="license">License</h1>
 
 Copyright 2014 by [SAP SE](http://www.sap.com) and made available under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0). 
 
@@ -35,8 +34,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-<h1 id="credits">Credits
-</h1>
+<h1 id="credits">Credits</h1>
 
 <p align="center">
 ![SAP](https://cdn.rawgit.com/reviewninja/review.ninja/master/sap_logo.png)
