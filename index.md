@@ -2,14 +2,6 @@
 layout: default
 ---
 
-<h1>ReviewNinja Documentation</h1>
-Welcome to 
-[ReviewNinja](https://github.com/reviewninja/review.ninja) documentation! 
-
-Start reviewing code at http://review.ninja/ or [create your own private instance]({{ site.baseurl }}/installation). 
-
-Both the appication and the documentation are under active development, so changes may occur without prior notice.
-
 <h1 id="quickstart">Quickstart</h1>
 
 Go to <a href="http://review.ninja/auth/github" target="_blank">ReviewNinja</a>.
@@ -99,8 +91,7 @@ You can choose to receive email notifications for the following:
 You can also enter specific branches that you want to "watch".  You will receive email notifications about the branch whenever there is an action related to it.
 
 
-<h1 id="license">License
-</h1>
+<h1 id="license">License</h1>
 
 Copyright 2014 by [SAP SE](http://www.sap.com) and made available under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0). 
 
@@ -116,8 +107,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-<h1 id="credits">Credits
-</h1>
+<h1 id="credits">Credits</h1>
 
 <p align="center">
 {% image sap.png %}
