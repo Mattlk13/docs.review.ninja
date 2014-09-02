@@ -3,47 +3,50 @@ layout: default
 title: ReviewNinja Environment Variables
 ---
 
-<h1 id="environment-variables">Environment Variables</h1>
+Environment Variables
+=====================
 
-The following are the environment variables you can configure in the venv file:
+The following are the environment variables you have to configure to run a
+private instance:
 
-<code>GITHUB_CLIENT</code>:  Required
+> *Pro Tip:* there is an example of these files in the root directory of the
+> application called `.env.example` it contains preset variables suitable for
+> development use.
 
-<code>GITHUB_SECRET</code>:  Required
+`HOST`: Defaults to "review.ninja".
 
-<code>GITHUB_CALLBACK</code>:  Defaults to "PROTOCOL://HOST(:PORT)?/auth/github/callback"
+`PORT`: The local port to bind to. Defaults to 5000.
 
-<code>GITHUB_HOST</code>:  Defaults to "github.com". Warning: If this variable is set, it is assumed that GitHub Enterprise is used.
+`PROTOCOL`: Valid options are "http" or "https". Defaults to "https".
 
-<code>GITHUB_API_HOST</code>:  Defaults to "api.github.com"
+`HOST_PORT`: This only needs to be set if it is a custom host port.  For
+example, http and https are used but not on port 80 and 443.
 
-<code>GITHUB_PATH_PREFIX</code>	- For GitHub Enterprise, this defaults to "/api/v3". Otherwise, it defaults to empty string or "".
+`GITHUB_CLIENT`: Required. From your registered application in GitHub.
 
-<code>GITHUB_PROTOCOL</code>:  Options are "http" or "https".  Defaults to "https".  
+`GITHUB_SECRET`: Required. From your registered application in GitHub.
 
-<code>GITHUB_AUTHORIZATION_URL</code>:  Defaults to "GITHUB_PROTOCOL://GITHUB_HOST/login/oauth/authorize"
+`GITHUB_PROTOCOL`: Valid options are "http" or "https". Defaults to "https".
 
-<code>GITHUB_TOKEN_URL</code>:  Defaults to "GITHUB_PROTOCOL://GITHUB_HOST/login/oauth/access_token"
+`GITHUB_HOST`: Defaults to "github.com". 
 
-<code>GITHUB_PROFILE_URL</code>:  Defaults to "GITHUB_PROTOCOL://GITHUB_API_HOST+GITHUB_PATH_PREFIX/user"
+> *Warning:* If this variable is set, it is assumed that GitHub Enterprise is
+> used.
 
-<code>GACODE</code>:  Optional.  If this is not set, Google Analytics will not be recorded.
+`GITHUB_API_HOST`: Defaults to "api.github.com".
 
-<code>HOST</code>:  Defaults to "review.ninja"
+`MONGODB`: Mandatory. This has to be in form of a mongodb url, e.g. `mongodb://<user>:<password>@<host>:<port>/<dbname>`.
 
-<code>HOST_PORT</code>:  This only needs to be set if it is a custom host port.  For example, http and https are used but not on port 80 and 443.
+`GACODE`: Optional. If this is not set, Google Analytics will not be recorded.
 
-<code>MONGODB</code>:  This must be set if it is not the same as the default: "mongodb://reviewninja:reviewninja@localhost:27017/reviewninja"  The default is only for development purposes.  It is not recommended.
+SMTP
+----
 
-<code>PORT</code>:  The local port to bind to.  Defaults to 5000.
-
-<code>PROTOCOL</code>:  Defaults to "https".  "http" or "https". 
-
-<code>SMTP_HOST</code>:  if SMTP_HOST is set, then all SMTP_* variables must be set.  If they are not set, then the server's sendmail variables will be used.
+> If `SMTP_HOST` is set, then all `SMTP_*` variables must be set. If
+> `SMTP_HOST` is not set, then the systems's sendmail will be used.
  
- * <code>SMTP_HOST</code>
- * <code>SMTP_PORT</code>
- * <code>SMTP_USER</code>
- * <code>SMTP_PASS</code>
-
-	
+ * `SMTP_HOST`: Host on which the SMTP Server runs on.
+ * `SMTP_PORT`: Port on which the SMTP Server runs on.
+ * `SMTP_SSL`: Use ssl or not, values are "true" or "false". Defaults to "true".
+ * `SMTP_USER`: User on the SMTP Server.
+ * `SMTP_PASS`: Password for the `SMTP_USER`.
