@@ -89,28 +89,3 @@ You can choose to receive email notifications for the following:
   * Ninja stars
 
 You can also enter specific branches that you want to "watch".  You will receive email notifications about the branch whenever there is an action related to it.
-
-
-<h1 id="license">License</h1>
-
-Copyright 2014 by [SAP SE](http://www.sap.com) and made available under the [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0). 
-
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-
-<h1 id="credits">Credits</h1>
-
-<p align="center">
-{% image sap.png %}
-
-<p align="center">
-<i class="fa fa-heart"></i> from the github team @ sap
