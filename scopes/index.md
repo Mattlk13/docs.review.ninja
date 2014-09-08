@@ -41,8 +41,4 @@ ReviewNinja requests the following permissions:
 
  	Allows us to read from the organizations to which you belong.
 
- * write:org
-
- 	Allows us to write to the organizations to which you belong. We use this for creating issues.
-
 Please refer to [GitHub's API documentation](https://developer.github.com/v3/oauth/#scopes) for more information.
