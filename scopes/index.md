@@ -1,44 +1,53 @@
 ---
 layout: default
-title: ReviewNinja Use of GitHub API Scopes
+title: ReviewNinja's Use of GitHub API Scopes
 ---
-<h1 id="github-api-scope">
-ReviewNinja Use of GitHub API Scopes
-</h1>
 
-We authenticate all sessions with GitHub's provided OAuth service.  We never store code in our own data persistence.  We do store user tokens (provided by OAuth), and name (GitHub handle).  All other information stored is specific to ReviewNinja.  ReviewNinja is a "client-heavy" application, meaning that every request for GitHub data is piped to GitHub and subject to their security mechanisms.
+ReviewNinja's Use of GitHub API Scopes
+======================================
 
-The following are the activities that ReviewNinja does with the GitHub permissions:
+ReviewNinja authenticates all sessions with GitHub's provided OAuth service.
+We never store code in our own data persistence. We do store user tokens
+(provided by OAuth), and id (GitHub's unique id). All other information stored
+is specific to ReviewNinja. ReviewNinja is a "client-heavy" application,
+meaning that every request for GitHub data is piped to GitHub and subject to
+their security mechanisms.
+
+The following are the activities that ReviewNinja does with the GitHub
+permissions:
 
   1. Create issues
-  2. Set statuses
+  2. Set commit statuses
   3. Read the primary email address of the user
   4. Create and delete webhooks
+  5. Retrieve all repositories of a user
 
 ReviewNinja requests the following permissions:  
 
- * user:email
+ * `user:email`
 
-	Allows us to use your email address to send you notifications. We do not use your email address for any other purpose, nor do we store your email in our perisistance.
+	Allows ReviewNinja to use a user's email address to send notifications.
+	ReviewNinja does not store a user's email in its perisistance.
 
- * repo
+ * `repo`
 
- 	Allows us to access your repo diffs, files, and pull requests in order to perform a code review.
+	Allows ReviewNinja to access a user's repository commit diffs, files, issues,
+	and pull requests in order to perform a code review.
 
- * repo:status
+ * `repo:status`
 
- 	Allows us to update commit status.
+	Allows ReviewNinja to update a commit's status.
 
- * read:repo_hook
+ * `read:repo_hook`
 
- 	Allows us to read from a repositories webhooks.
+	Allows ReviewNinja to read from a repositories webhooks.
 
- * write:repo_hook
+ * `write:repo_hook`
 
- 	Allows us to write to a repositories webhooks.
+	Allows ReviewNinja to write to a repositories webhooks.
 
- * read:org
+ * `read:org`
 
- 	Allows us to read from the organizations to which you belong.
+	Allows ReviewNinja to read from the organizations to which you belong.
 
 Please refer to [GitHub's API documentation](https://developer.github.com/v3/oauth/#scopes) for more information.
