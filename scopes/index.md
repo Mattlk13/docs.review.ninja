@@ -1,10 +1,10 @@
 ---
 layout: default
-title: ReviewNinja's Use of GitHub API Scopes
+title: ReviewNinja's Use of GitHub's OAuth Scope
 ---
 
-ReviewNinja's Use of GitHub API Scopes
-======================================
+ReviewNinja's Use of GitHub's OAuth Scope
+=========================================
 
 ReviewNinja authenticates all sessions with GitHub's provided OAuth service.
 We never store code in our own data persistence. We do store user tokens
