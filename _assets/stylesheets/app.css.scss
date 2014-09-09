@@ -34,6 +34,16 @@ ul.doc-nav {
   li {
     padding: 10px 5px;
     border-bottom: 1px solid #ccc;
+
+  }
+
+  li.title {
+    margin-top: 25px;
+
+    a {
+      color: #666;
+      font-size: 120%;
+    }
   }
 
   ul.doc-nav {
@@ -44,3 +54,5 @@ ul.doc-nav {
     }
   }
 }
+
+
