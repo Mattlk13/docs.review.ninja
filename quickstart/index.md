@@ -31,23 +31,21 @@ To remove a repository, click <i class="fa fa-times"></i>.
 ## Basic Workflow
 
   1. Create a branch for your feature.
-  2. Write code.
+  2. Commit.
   3. Submit a pull request.
-  4. Other members of the organization review the code and comment or star the
+  4. Collaborators of the project review the code and create issues or star the
      code as a sign of approval.
-  5. The collaborator decides if sufficient code review has occurred and
-     commits the merge.
+  5. If issues were opened, they are fixed. Goto 4.
+  6. The collaborators decide if sufficient code review has occurred and merge
+     the pull request.
 
-> **ProTop:** ReviewNinja integrates well into the GitHub Flow.
+> **ProTip:** ReviewNinja integrates well into the [GitHub
+> Flow](https://guides.github.com/introduction/flow/index.html).
 
 ## Code Review
 
-Compare diffs and add your comments. ReviewNinja provides a convenient way to
-add your comments either for a pull request as a whole or on specific line
-numbers.
-
-Click the repository you want to view.
-All pending pull requests in this repository appear in a list.  
+Click the repository you want to view. All pending pull requests of this
+repository appear in a list.  
 
 Click a pull request to begin a code review.
 
@@ -60,10 +58,16 @@ issue.
 
 To create an issue, click Issues <i class="fa fa-plus"></i>.
 
-You must enter a title for the issue.  Entering a description is optional. To
-link the issue to a line number, click the line number.  An icon <span
+You must enter a title for the issue. Entering a description is optional. To
+link the issue to a line number, click the line number. An icon <span
 class="octicon octicon-issue-opened text-warning"></span> appears beside the
 line.
+
+You can also tag a line of code to the issue, so you can tell more exactly
+where and what needs fixing. When collaborators looks at that pull request,
+they will notice the line tagged with an issue symbol. Once the tagged line
+is clicked, the corresponding issue will be opened. In case of several issues
+linking to one line, all issues involved are filtered.
 
 Click on other issues to view them, add comments, or close the issues. The
 corresponding GitHub issue will also be closed.  
@@ -112,3 +116,6 @@ You can choose to receive email notifications for the following:
 You can also enter specific branches that you want to "watch".  You will
 receive email notifications about the branch whenever there is an action
 related to it.
+
+> **ProTip** Watched branches are not plain text. You can use a wildcard
+> to select several branches at once. E.g. "feature/\*"
