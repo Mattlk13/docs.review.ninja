@@ -7,48 +7,55 @@
     <meta name="description" content="ReviewNinja documentation">
     <meta name="viewport" content="width=device-width">
     <meta name="generator" content="jekyll">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     {% stylesheet app %}
     {% javascript app %}
   </head>
   <body>
-  <nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="{{ site.baseurl }}/"><strong>Review</strong>Ninja</a>
-      </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="{{ site.baseurl }}/">DOCUMENTATION</a></li>
-          <li><a href="http://review.ninja/auth/github">Sign in with GitHub</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
+    <!-- the navbar -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/" style="padding-top:13px;">{% image logo.png %}</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right" ng-show="user.loaded">
+            <li><a href="http://review.ninja">FEATURES</a></li>
+            <li><a href="http://docs.review.ninja/">DOCUMENTATION</a></li>
+            <li><a href="">CONTACT</a></li>
+            <li>&nbsp;&nbsp;</li>
+            <li><a href="http://app.review.ninja/auth/github">SIGN IN</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    {{ page.title }}
+
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4 col-md-offset-3">
+
+      <div class="row" style="margin-bottom:20px;">
+        <div class="col-md-6 col-md-offset-2">
           {{ content }}
         </div>
-        <div class="col-md-2">
-          <ul class="list-unstyled doc-nav">
-            <li class="title"><a href="{{ site.baseurl }}/">Documentation</a></li>
-            <li><a href="{{ site.baseurl }}/quickstart">Quickstart</a></li>
-            <li><a href="{{ site.baseurl }}/scopes">GitHub OAuth Scope</a></li>
-            <li class="title"><a href="https://github.com/reviewninja/docs.review.ninja">Contribute</a></li>
-            <li><p>
-              This documentation is a <a href="https://github.com/reviewninja/docs.review.ninja">git repository</a>. We would love you to contribute to it. <3
-            </p></li>
-          </ul>
+        <div class="col-md-4" style="padding:0;">
+
+          <div class="list-group">
+            <a href="{{ site.baseurl }}/" class="list-group-item {% if page.documentation %}active{% endif %}">Documentation</a>
+            <a href="{{ site.baseurl }}/quickstart" class="list-group-item {% if page.quickstart %}active{% endif %}">Quickstart</a>
+            <a href="{{ site.baseurl }}/scopes" class="list-group-item {% if page.scope %}active{% endif %}">GitHub OAuth Scope</a>
+          </div>
+
+          <div class="well" style="margin-right:1px;">
+            <a href="https://github.com/reviewninja/docs.review.ninja"><i class="fa fa-github"></i></a>
+            <small>Feel free to help us out by <a href="https://github.com/reviewninja/docs.review.ninja">forking</a> and contributing to this repository.</small>
+          </div>
         </div>
       </div>
     </div>

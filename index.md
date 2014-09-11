@@ -1,9 +1,9 @@
 ---
 layout: default
+documentation: true
 ---
 
-What is ReviewNinja?
-====================
+## What is ReviewNinja?
 
 ReviewNinja is a lightweight tool deeply integrated with GitHub that helps you
 perform code reviews quickly and efficiently. ReviewNinja supports hassle-free
@@ -18,15 +18,13 @@ data is stored at GitHub only.  None of your code is stored with ReviewNinja.
 ReviewNinja integrates into GitHub.com as well as GitHub Enterprise. The
 application stack includes Node.js, Express, MongoDB and AngularJS.
 
-Why should I use ReviewNinja?
-=============================
+## Why should I use ReviewNinja?
 
 ReviewNinja gives code review more structure in GitHub. It also provides a
 status overview so that team members in other departments, such as product
 management or design, can quickly grasp the state of the project.
 
-License
-=======
+## License
 
 Copyright 2014 by [SAP SE](http://www.sap.com) and made available under the
 [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0). 
@@ -42,11 +40,7 @@ under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
 CONDITIONS OF ANY KIND, either express or implied.  See the License for the
 specific language governing permissions and limitations under the License.
 
-Credits
-=======
+## Credits
 
-<p align="center">
 ![SAP](https://cdn.rawgit.com/reviewninja/review.ninja/master/sap_logo.png)
-
-<p align="center">
 <i class="fa fa-heart"></i> from the github team @ sap

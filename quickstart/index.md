@@ -1,16 +1,16 @@
 ---
 layout: default
+quickstart: true
 ---
 
-Quickstart
-==========
+## Quickstart
 
 Go to <a href="http://review.ninja/auth/github" target="_blank">ReviewNinja</a>
 and authenticate with GitHub. If you are wondering, what ReviewNinja needs
 those permissions for, please refer to the [GitHub OAuth Scope](/scopes)
 documentation page.
 
-## Add your repository
+### Add your repository
 
 {% image add-repo.png width="100%" %}
 
@@ -28,7 +28,7 @@ the the repository you want to add and click the add repo button.
 
 To remove a repository, click <i class="fa fa-times"></i>.
 
-## Basic Workflow
+### Basic Workflow
 
   1. Create a branch for your feature.
   2. Commit.
@@ -42,7 +42,7 @@ To remove a repository, click <i class="fa fa-times"></i>.
 > **ProTip:** ReviewNinja integrates well into the [GitHub
 > Flow](https://guides.github.com/introduction/flow/index.html).
 
-## Code Review
+### Code Review
 
 Click the repository you want to view. All pending pull requests of this
 repository appear in a list.  
@@ -51,7 +51,7 @@ Click a pull request to begin a code review.
 
 {% image pull-request.png width="100%" %}
 
-## Issue Management
+### Issue Management
 
 Any time you discover something that needs fixing, ReviewNinja opens a GitHub
 issue. 
@@ -72,7 +72,7 @@ linking to one line, all issues involved are filtered.
 Click on other issues to view them, add comments, or close the issues. The
 corresponding GitHub issue will also be closed.  
 
-## Ninja Starring
+### Ninja Starring
 
 ReviewNinja understands that often in code review what matters most is *who*
 did the review. By starring a pull request, it shows that the reviewer has seen
@@ -80,26 +80,26 @@ the code change and has approved it.
 
 To star a review, click the ninja <i class="fa fa-star ng-scope"></i>.
 
-## Merge with Confidence
+### Merge with Confidence
 
 The Merge pull request button changes color to signal the level of confidence
 in the merge.
 
-{% image green-merge.PNG width="50%" %}
+{% image pull-good.png width="200px" %}
 
 If there is at least one star with no open issues, the Merge pull request
 button appears green.  
 
-{% image orange-merge.PNG width="50%" %}
+{% image pull-pending.png width="200px"  %}
 
 If there are no stars, the Merge pull request button appears orange.  
 
-{% image red-merge.PNG width="50%" %}
+{% image pull-bad.png width="200px"  %}
 
 If there are open issues, the Merge pull request button appears red.
 
 
-## Configuration
+### Configuration
 
 You can change your notification settings for pull requests, issues, and stars.
 In contrast to GitHub, ReviewNinja email notifications are "opt-in".  You will
