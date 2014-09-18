@@ -3,6 +3,9 @@ layout: default
 documentation: true
 ---
 
+Documentation
+=============
+
 ## What is ReviewNinja?
 
 ReviewNinja is a lightweight tool deeply integrated with GitHub that helps you
