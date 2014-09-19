@@ -26,10 +26,8 @@
     <div class="container-fluid">
 
       <div class="row" style="margin-bottom:20px;">
-        <div class="col-md-6 col-md-offset-2">
-          {{ content }}
-        </div>
-        <div class="col-md-2" style="padding:0;">
+        <div class="col-md-2 pull-right" style="padding:0;"></div>
+        <div class="col-md-2 col-xs-12 pull-right" style="padding:0;">
 
           <div class="list-group">
             <a href="{{ site.baseurl }}/" class="list-group-item {% if page.documentation %}active{% endif %}">Documentation</a>
@@ -42,6 +40,10 @@
             <p><small><a href="https://github.com/reviewninja/review.ninja/issues/new">If you have a question about ReviewNinja itself, go ahead and open an issue.</a></small></p>
           </div>
         </div>
+        <div class="col-md-6 col-md-offset-2 col-xs-12 pull-left">
+          {{ content }}
+        </div>
+        <div class="clearfix"></div>
       </div>
     </div>
   </body>
