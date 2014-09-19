@@ -114,8 +114,8 @@ DEPENDENCIES
   font-awesome-sass
   jekyll
   jekyll-assets
+  kramdown
   rake
-  redcarpet
   respond-to
   rubyzip
   sass
