@@ -123,9 +123,9 @@ related to it.
 
 ### Ignoring files
 
-You can ignore specific files and therefore exclude them from the ReviewNinja code review.
-Similar to Git's [.gitignore](http://git-scm.com/docs/gitignore), the so called
-<i>.ninjaignore</i> file can be used to specify which paths and files are excluded.
-When reviewing a pull request, the .ninjaignore file of the head commit will be used.
-Excluded files can still be inspected with ReviewNinja, but they are hidden by default.
-If no .ninjaignore file exists in the head commit of the pull request, no files are ignored.
+A ``.ninjaignore`` file specifies which files should be ignored by ReviewNinja.
+Each line specifies a file pattern, just like your 
+[.gitignore file](http://git-scm.com/docs/gitignore).
+
+Please note, ignored files will be minimized and still available for inspection
+in ReviewNinja.
