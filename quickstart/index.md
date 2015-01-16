@@ -119,3 +119,13 @@ related to it.
 
 > **ProTip** Watched branches are not plain text. You can use a wildcard
 > to select several branches at once. E.g. "feature/\*"
+
+
+### Ignoring files
+
+You can ignore specific files and therefore exclude them from the ReviewNinja code review.
+Similar to Git's [.gitignore](http://git-scm.com/docs/gitignore), the so called
+<i>.ninjaignore</i> file can be used to specify which paths and files are excluded.
+When reviewing a pull request, the .ninjaignore file of the head commit will be used.
+Excluded files can still be inspected with ReviewNinja, but they are hidden by default.
+If no .ninjaignore file exists in the head commit of the pull request, no files are ignored.
