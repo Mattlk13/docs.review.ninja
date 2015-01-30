@@ -10,22 +10,23 @@ Documentation
 
 ReviewNinja is a lightweight tool deeply integrated with GitHub that helps you
 perform code reviews quickly and efficiently. ReviewNinja supports hassle-free
-committing and merging through pull requests, with a simple voting system. Our
+committing and merging through Pull Requests, with a simple voting system. Our
 primary focus is to make it easier to identify, review, and collaborate in code
 reviews so you can merge with confidence.
 
 ReviewNinja stores the least amount of information from your GitHub account to
 make the app work. It ensures that the necessary data is up to date and the
-data is stored at GitHub only.  None of your code is stored with ReviewNinja.  
+data is stored in GitHub only.  None of your code is stored with ReviewNinja.  
 
 ReviewNinja integrates into GitHub.com as well as GitHub Enterprise. The
 application stack includes Node.js, Express, MongoDB and AngularJS.
 
 ## Why should I use ReviewNinja?
 
-ReviewNinja gives code review more structure in GitHub. It also provides a
-status overview so that team members in other departments, such as product
-management or design, can quickly grasp the state of the project.
+ReviewNinja gives code review more structure than Pull Requests alone offer.
+It also provides a status overview so that team members in other departments, 
+such as product management or design, can quickly grasp the state of the 
+project.
 
 ## License
 

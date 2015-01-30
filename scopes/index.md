@@ -31,7 +31,7 @@ ReviewNinja requests the following permissions:
  * `repo`
 
 	Allows ReviewNinja to access a user's repository commit diffs, files, issues,
-	and pull requests in order to perform a code review.
+	and Pull Requests in order to perform a code review.
 
  * `repo:status`
 
