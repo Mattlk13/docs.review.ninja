@@ -43,6 +43,8 @@ Click a Pull Request to begin a code review.
 
 {% image pull-request.png width="100%" %}
 
+> **ProTip:** Not the Pull Request you were looking for? No problem! Use the search bar in the upper right of the Pull Request list. You can search Author, Title, Number, Branch Name and so on. Give it a try!
+
 ### Issue Management
 
 Any time you discover something that needs fixing, ReviewNinja opens a GitHub
@@ -137,3 +139,13 @@ receive email notifications about the branch whenever there is an action
 related to it.
 
 > **ProTip** You can use a wildcards to specify watched branches, e.g. "feature/\*"
+
+### Collaboration
+
+Keep track your team's activity via the Team Tab. The Team Tab displays each 
+collaborator and their contributions. Including # of ninja stars added, # of issues opened
+and the # of merged Pull Requests.
+
+The Team Tab also allows you to invite repository collaborators that have not yet
+joined Review Ninja. 
+
