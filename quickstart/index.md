@@ -6,14 +6,14 @@ quickstart: true
 ## Quickstart
 
 Go to <a href="http://app.review.ninja/auth/github" target="_blank">ReviewNinja</a> and authenticate with GitHub. 
-If you are wondering, what ReviewNinja needs those permissions for 
+If you are wondering what ReviewNinja needs those permissions for, 
 please refer to the [GitHub OAuth Scope](/scopes) documentation page.
 
 ### Add your repository
 
 {% image add-repo.png width="100%" %}
 
-To add a reposion tory to ReviewNinja hit <i class="fa fa-plus-circle"></i> to reveal the search dialog.
+To add a repository to ReviewNinja hit <i class="fa fa-plus-circle"></i> to reveal the search dialog.
 
 Start searching for the repository.
 
