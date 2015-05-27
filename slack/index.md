@@ -5,11 +5,11 @@ slack: true
 
 ## Slack Integration
 
-ReviewNinja can integrate with [Slack](https://slack.com/) to notify through messages when certain events occur!
+ReviewNinja now supports [Slack](https://slack.com/) integration!
 
 {% image slack-message.png width="100%" %}
 
-Currently, we support Slack notifications for three different types of events:
+Currently we post notifications for these events:
 
 * Starring and unstarring a pull request.
 * Creating a pull request.
@@ -25,10 +25,10 @@ Once there, go to the "Authentication" section and click "Create Token" for the 
 
 ### Setting up a Repo for Slack Notifications
 
-Once you have the token, go to any repo in ReviewNinja and click the Settings icon (the <i class="fa fa-cog"></i>) at the top.
+With your Slack token, go to your repo in ReviewNinja and click on the Settings icon (the <i class="fa fa-cog"></i>) at the top.
 
-Once in the settings page, at the bottom, there will be a section for Slack Integration:
+Once in the settings page you will notice a section for Slack Integration at the bottom:
 
 {% image slack-integration-settings.png width="100%" %}
 
-Paste the generated token from Slack into the "Token" section, give the #channelname that you want in the "Channel" section, and your repo will be good to go.
+Now you can paste your Slack token, enter the channel (this is where the notifications will be posted), and tweak which events you wish be notified about.
