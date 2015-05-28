@@ -17,15 +17,11 @@ Currently we post notifications for these events:
 
 ### Preparing a Slack Bot for a channel and getting a token.
 
-In order to start using ReviewNinja with Slack, you first need to create a Slack API token.
+In order to start using ReviewNinja with Slack, you first need to [create a Slack Bot](https://my.slack.com/services/new/bot).
 
-Go to [this link to create a new bot for your team](https://my.slack.com/services/new/bot).
+Choose any user name and click "Add Bot Integration". This will take you to the bot setup page that includes an API token. Copy this token.
 
-Once there, choose any user name and click "Add Bot Integration." This will take you to the bot setup page that includes an API token. Copy this token.
-
-In Slack, go to the channel you want to have ReviewNinja notifications in. Click on the encircled <i class="fa fa-info"></i> icon at the top for channel info, then click the "Invite more people to this channel" link. 
-
-You should be able to find the bot you created in the list.
+In Slack, go to the channel in which you wish to enable ReviewNinja notifications. Click on the encircled <i class="fa fa-info"></i> icon at the top for channel info, then click the "Invite more people to this channel" link. Add the bot you just created to this channel.
 
 ### Setting up a Repo for Slack Notifications
 
@@ -35,4 +31,4 @@ Once in the settings page you will notice a section for Slack Integration at the
 
 {% image slack-integration-settings.png width="100%" %}
 
-Take the token you generated in the previous step when creating the bot and paste the generated token into the "Token" section, enter the channel (this is where the notifications will be posted), and tweak which events you wish be notified about.
+Take the token you generated in the previous step when creating the bot and paste into the "Token" section, enter the channel (this is where the notifications will be posted), and tweak which events you wish be notified about.
