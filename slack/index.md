@@ -21,7 +21,7 @@ In order to start using ReviewNinja with Slack, you first need to create a Slack
 
 Go to [this link to create a new bot for your team](https://my.slack.com/services/new/bot).
 
-Once there, choose any user name and click "Add Bot Integration." This will take you to the bot setup page that includes an API token. Copy and paste this token somewhere.
+Once there, choose any user name and click "Add Bot Integration." This will take you to the bot setup page that includes an API token. Copy this token.
 
 In Slack, go to the channel you want to have ReviewNinja notifications in. Click on the encircled <i class="fa fa-info"></i> icon at the top for channel info, then click the "Invite more people to this channel" link. 
 
