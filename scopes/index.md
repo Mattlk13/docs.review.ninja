@@ -15,11 +15,10 @@ their security mechanisms.
 The following are the activities that ReviewNinja does with the GitHub
 permissions:
 
-  1. Create issues
-  2. Set commit statuses
-  3. Read the primary email address of the user
-  4. Create and delete webhooks
-  5. Retrieve all repositories of a user
+  1. Set commit statuses
+  2. Read the primary email address of the user
+  3. Create and delete webhooks
+  4. Retrieve all repositories of a user
 
 ReviewNinja requests the following permissions:  
 
