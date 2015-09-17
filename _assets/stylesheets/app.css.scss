@@ -97,8 +97,10 @@ $breadcrumb-padding-vertical: 15px;
 $label-default-bg: $brand-info;
 $label-color: $brand-primary;
 
-@import "bootstrap";
+@import "font-awesome-sprockets";
 @import "font-awesome";
+@import "bootstrap";
+
 
 body {
   font-weight: 300;

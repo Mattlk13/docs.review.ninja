@@ -16,7 +16,20 @@
     <div class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
           <a class="navbar-brand" href="/" style="padding-top:13px;">{% image logo.png %}</a>
+        </div>
+        <div class="navbar-collapse collapse" id="nav">
+          <ul class="nav navbar-nav navbar-right buttonstopbar" style="font-size:12px;">
+            <li><a href="https://www.review.ninja">ABOUT</a></li>
+            <!-- <li><a href="https://enterprise.review.ninja">ENTERPRISE</a></li> -->
+            <li class="text-left"><a href="http://app.review.ninja/auth/github" class="btn btn-link">Sign in</a></li>
+          </ul>
         </div>
       </div>
     </div>
