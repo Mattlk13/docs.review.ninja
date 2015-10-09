@@ -1,6 +1,8 @@
 ###Tagline
 Merge with confidence.
 
+###Short description
+ReviewNinja is a code review tool for GitHub that lets you merge pull requests with confidence.
 
 ###Description
 ReviewNinja is a light-weight code-review tool which fits neatly into the GitHub pull request workflow. It presents all the project information needed to commit a pull request and merge code confidently.
