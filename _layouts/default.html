@@ -7,8 +7,12 @@
     <meta name="description" content="ReviewNinja documentation">
     <meta name="viewport" content="width=device-width">
     <meta name="generator" content="jekyll">
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css" rel="stylesheet" type="text/css">
+
     {% stylesheet app %}
-    {% javascript app %}
   </head>
   <body>
 
@@ -27,8 +31,8 @@
         <div class="navbar-collapse collapse" id="nav">
           <ul class="nav navbar-nav navbar-right buttonstopbar" style="font-size:12px;">
             <li><a href="https://www.review.ninja">ABOUT</a></li>
-            <!-- <li><a href="https://enterprise.review.ninja">ENTERPRISE</a></li> -->
-            <li class="text-left"><a href="http://app.review.ninja/auth/github" class="btn btn-link">Sign in</a></li>
+            <li><a href="https://enterprise.review.ninja">ENTERPRISE</a></li>
+            <li><a href="http://app.review.ninja/auth/github" class="btn btn-link" style="text-align: left; font-size: 18px;">Sign in</a></li>
           </ul>
         </div>
       </div>
@@ -63,5 +67,7 @@
         <div class="clearfix"></div>
       </div>
     </div>
+
+    {% javascript app %}
   </body>
 </html>

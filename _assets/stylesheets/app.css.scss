@@ -82,8 +82,8 @@ $navbar-default-color: $gray;
 $navbar-default-link-color: $gray;
 $navbar-default-link-hover-color: $gray;
 $navbar-default-link-active-color: $gray;
-$navbar-margin-bottom: 0;
 $nav-link-padding: 15px 25px;
+$navbar-margin-bottom: 0px;
 
 // breadcrumb
 $breadcrumb-bg: transparent;
@@ -103,7 +103,7 @@ $label-color: $brand-primary;
 
 
 body {
-  font-weight: 300;
+  font-weight: 200;
 }
 
 h1, h2, h3, h4 {
