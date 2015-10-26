@@ -13,14 +13,11 @@ ReviewNinja supports a variety of notifications.
 
 ### Pull Request comments
 
-You can disable automatic Pull Requests comments in GitHub by clicking <i class="fa fa-cog"></i>,
-and deselecting this option.
+You can disable automatic Pull Requests comments in GitHub by clicking <i class="fa fa-cog"></i>, and deselecting this option.
 
 ### Email notifications
 
-You can change your notification settings for Pull Requests, issues, and stars.
-In contrast to GitHub, ReviewNinja email notifications are "opt-in".  You will
-only receive email notifications if you select the appropriate checkboxes. 
+You can change your notification settings for Pull Requests, issues, and stars. In contrast to GitHub, ReviewNinja email notifications are "opt-in".  You will only receive email notifications if you select the appropriate checkboxes. 
 
 To configure your settings, click <i class="fa fa-cog"></i>.
 
@@ -29,9 +26,7 @@ You can choose to receive email notifications for the following:
   * Pull Requests
   * Ninja stars
 
-You can also enter specific branches that you want to "watch".  You will
-receive email notifications about the branch whenever there is an action
-related to it.
+You can also specify branches that you wish to "watch". If specified, you will only receive email notifications for your watched branches.
 
 > **ProTip** You can use a wildcards to specify watched branches, e.g. "feature/\*"
 

@@ -5,9 +5,7 @@ quickstart: true
 
 ## Quickstart
 
-Go to <a href="http://app.review.ninja/auth/github" target="_blank">ReviewNinja</a> and authenticate with GitHub. 
-If you are wondering what ReviewNinja needs those permissions for, 
-please refer to the [GitHub OAuth Scope](/scopes) documentation page.
+Go to <a href="http://app.review.ninja/auth/github" target="_blank">ReviewNinja</a> and authenticate with GitHub.  If you are wondering what ReviewNinja needs those permissions for,  please refer to the [GitHub OAuth Scope](/scopes) documentation page.
 
 ### Add your repository
 
@@ -41,13 +39,11 @@ Code Review is accomplished using two features:
 
 ### Merge with Confidence
 
-The Merge Pull Request button changes color to signal the level of confidence
-in the merge.
+The Merge Pull Request button changes color to signal the level of confidence in the merge.
 
 {% image pull-good.png width="35%"%}
 
-If the number of ninja stars reaches the defined threshold and there are no
-open review comment threads, the Merge Pull Request button appears green.  
+If the number of ninja stars reaches the defined threshold and there are no open review comment threads, the Merge Pull Request button appears green.  
 
 {% image pull-pending.png width="35%" %}
 
@@ -60,20 +56,14 @@ If there are open review comment threads, the Merge Pull Request button appears 
 
 ### Ignoring files
 
-A ``.ninjaignore`` file specifies which files should be ignored by ReviewNinja.
-Each line specifies a file pattern, just like your 
-[.gitignore file](http://git-scm.com/docs/gitignore).
+A ``.ninjaignore`` file specifies which files should be ignored by ReviewNinja. Each line specifies a file pattern, just like your  [.gitignore file](http://git-scm.com/docs/gitignore).
 
-Please note, ignored files will be minimized by default and still available for 
-inspection in ReviewNinja.
+Please note, ignored files will be minimized by default and still available for inspection in ReviewNinja.
 
 
 ### Collaboration
 
-Keep track your team's activity via the Team Tab. The Team Tab displays each 
-collaborator and their contributions. Including # of ninja stars added, # of threads opened
-and the # of merged Pull Requests.
+Keep track your team's activity via the Team Tab. The Team Tab displays each collaborator and their contributions. Including # of ninja stars added, # of threads opened and the # of merged Pull Requests.
 
-The Team Tab also allows you to invite repository collaborators that have not yet
-joined ReviewNinja. 
+The Team Tab also allows you to invite repository collaborators that have not yet joined ReviewNinja. 
 
