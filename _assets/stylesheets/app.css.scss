@@ -9,10 +9,11 @@ $gray-lighter: #f9f9f9;
 
 // brand colours
 $brand-primary: #3e9a94;
-$brand-primary-muted: #abd5d5;
-$brand-primary-hover: #2c827c;
-$brand-warning: #ffa159;
-$brand-danger: #ad3b25;
+$brand-success: #4c9931;
+$brand-primary-muted: lighten($brand-primary, 20%);
+$brand-primary-hover: darken($brand-primary, 10%);
+$brand-warning: #df843e;
+$brand-danger: #bd2c00;
 $brand-info: #d0eaea;
 $brand-merged: #6e5494;
 $link-color: #3c3c3d;
@@ -114,47 +115,13 @@ ul.nav.navbar-nav.navbar-right {
   font-size: 12px;
 }
 
+.label {
+    font-size: 80%;
+    font-weight: normal;
+}
+
 .affix {
   position: fixed;
   width: inherit;
   top: 52px;
 }
-
-// .nav {
-//   font-size: 13px;
-// }
-
-// .navbar-brand {
-//   font-size: 14px;
-// }
-
-// li.active a {
-//   font-weight: bold;
-// }
-
-// ul.doc-nav {
-//   li {
-//     padding: 10px 5px;
-//     border-bottom: 1px solid #ccc;
-
-//   }
-
-//   li.title {
-//     margin-top: 25px;
-
-//     a {
-//       color: #666;
-//       font-size: 120%;
-//     }
-//   }
-
-//   ul.doc-nav {
-//     margin-left: 20px;
-    
-//     li {
-//       padding: 5px;
-//     }
-//   }
-// }
-
-
