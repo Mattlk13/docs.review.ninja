@@ -3,33 +3,16 @@ layout: default
 notifications: true
 ---
 
-## Notification settings
+## Notifications
 
-ReviewNinja supports a variety of notifications.
+ReviewNinja supports the following email notifications:
 
-* Comments on pull requests on GitHub
-* Email notifications
-* Slack notifications
+**Pull requests opened or updated**: receive a notification when pull requests are created, or commits are added to a pull request.
 
-### Pull Request comments
+**Line notes created or resolved**: receive a notification when a review flag is created on a specific line of code, or when *all* open review threads have been resolved.
 
-You can disable automatic Pull Requests comments in GitHub by clicking <i class="fa fa-cog"></i>, and deselecting this option.
+**Ninja star given or removed**: receive a notification when a collaborator ninja stars a pull request, or removes a ninja star from a pull request.
 
-### Email notifications
-
-You can change your notification settings for Pull Requests, issues, and stars. In contrast to GitHub, ReviewNinja email notifications are "opt-in".  You will only receive email notifications if you select the appropriate checkboxes. 
-
-To configure your settings, click <i class="fa fa-cog"></i>.
-
-You can choose to receive email notifications for the following:
-
-  * Pull Requests
-  * Ninja stars
-
-You can also specify branches that you wish to "watch". If specified, you will only receive email notifications for your watched branches.
+Furthermore, you can specify branch filtering. If specified, you will only receive email notifications for your watched branches.
 
 > **ProTip** You can use a wildcards to specify watched branches, e.g. "feature/\*"
-
-### Slack notifications
-
-See [this page](/slack) for details about how to integrate ReviewNinja into your Slack channel.
