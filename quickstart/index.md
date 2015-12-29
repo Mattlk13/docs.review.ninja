@@ -5,7 +5,7 @@ quickstart: true
 
 ## Quickstart
 
-The steps below detail how to get up and running with ReviewNinja, including a description on the basic workflow and philosophy behind a ReviewNinja code review.
+The steps below detail how to get up and running with ReviewNinja, including a description of the basic workflow and the philosophy behind a ReviewNinja code review.
 
 ### Add your repository
 
@@ -43,7 +43,7 @@ Please note, ignored files will be minimized by default and still available for 
 
 ### Collaboration
 
-Keep track your team's activity via the Team Tab. The Team Tab displays each collaborator and their contributions, including the number of ninja stars added, number of threads opened and the number of pull requests merged.
+Keep track of your team's activity via the Team Tab. The Team Tab displays each collaborator and their contributions, including the number of ninja stars added, number of review threads opened, and the number of pull requests merged.
 
 The Team Tab also allows you to invite repository collaborators to ReviewNinja.
 
