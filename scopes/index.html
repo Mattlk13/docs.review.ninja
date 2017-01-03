@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ReviewNinja Documentation</title>
+    <meta name="description" content="ReviewNinja documentation">
+    <meta name="viewport" content="width=device-width">
+    <meta name="generator" content="jekyll">
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="/assets/app-9aa3a556c9ebe2ef114ae4f7c999c4cf.css">
+  </head>
+  <body>
+
+    <!-- the navbar -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/" style="padding-top:13px;"><img src="/assets/logo-96830a896d17c4acb9e93cedf8456a69.png"></a>
+        </div>
+        <div class="navbar-collapse collapse" id="nav">
+          <ul class="nav navbar-nav navbar-right buttonstopbar" style="font-size:12px;">
+            <li><a href="https://www.review.ninja">ABOUT</a></li>
+            <!-- <li><a href="https://enterprise.review.ninja">ENTERPRISE</a></li> -->
+            <li><a href="http://app.review.ninja/auth/github" class="btn btn-link" style="text-align: left; font-size: 18px;">Sign in</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="container-fluid">
+
+      <div class="row" style="margin-bottom:20px;">
+        <div class="col-md-2 pull-right" style="padding:0;"></div>
+        <div class="col-md-2 col-xs-12 pull-right" style="padding:0;">
+
+          <div class="list-group">
+            <a href="/" class="list-group-item ">Documentation</a>
+            <a href="/quickstart" class="list-group-item ">Quickstart</a>
+            <a href="/codereview" class="list-group-item ">Review Flags</a>
+            <a href="/stars" class="list-group-item ">Ninja Stars</a>
+            <a href="/notifications" class="list-group-item ">Notifications</a>
+            <a href="/slack" class="list-group-item ">Slack Integration</a>
+            <a href="/scopes" class="list-group-item active">GitHub OAuth Scope</a>
+          </div>
+
+          <div class="well" style="margin-right:1px;">
+            <p><small><a href="https://github.com/reviewninja/docs.review.ninja">This documentation is a repository on GitHub. Feel free to contribute.</a></small></p>
+            <p><small><a href="https://github.com/reviewninja/review.ninja/issues/new">If you have a question about ReviewNinja itself, go ahead and open an issue.</a></small></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-md-offset-2 col-xs-12 pull-left">
+          <h2 id="reviewninjas-use-of-githubs-oauth-scope">ReviewNinja’s Use of GitHub’s OAuth Scope</h2>
+
+<p>ReviewNinja authenticates all sessions with GitHub’s provided OAuth service. We never store code in our own data persistence. We do store user tokens (provided by OAuth), and id (GitHub’s unique id). All other information stored is specific to ReviewNinja. ReviewNinja is a “client-heavy” application, meaning that every request for GitHub data is piped to GitHub and subject to their security mechanisms.</p>
+
+<p>The following are the activities that ReviewNinja does with the GitHub permissions:</p>
+
+<ol>
+  <li>Set commit statuses</li>
+  <li>Read the primary email address of the user</li>
+  <li>Create and delete webhooks</li>
+  <li>Retrieve all repositories of a user</li>
+</ol>
+
+<p>ReviewNinja requests the following permissions:</p>
+
+<ul>
+  <li>
+    <p><code>user:email</code></p>
+
+    <p>Allows ReviewNinja to use a user’s email address to send notifications. ReviewNinja does not store a user’s email in its perisistance.</p>
+  </li>
+  <li>
+    <p><code>repo</code></p>
+
+    <p>Allows ReviewNinja to access a user’s repository commit diffs, files, issues, and Pull Requests in order to perform a code review.</p>
+  </li>
+  <li>
+    <p><code>repo:status</code></p>
+
+    <p>Allows ReviewNinja to update a commit’s status.</p>
+  </li>
+  <li>
+    <p><code>read:repo_hook</code></p>
+
+    <p>Allows ReviewNinja to read from a repositories webhooks.</p>
+  </li>
+  <li>
+    <p><code>write:repo_hook</code></p>
+
+    <p>Allows ReviewNinja to write to a repositories webhooks.</p>
+  </li>
+  <li>
+    <p><code>read:org</code></p>
+
+    <p>Allows ReviewNinja to read from the organizations to which you belong.</p>
+  </li>
+</ul>
+
+<p>Please refer to <a href="https://developer.github.com/v3/oauth/#scopes">GitHub’s API documentation</a> for more information.</p>
+
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+    <script src="/assets/app-6624687230c8822bf9a55359bf3b9006.js"></script>
+  </body>
+</html>

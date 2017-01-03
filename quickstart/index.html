@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ReviewNinja Documentation</title>
+    <meta name="description" content="ReviewNinja documentation">
+    <meta name="viewport" content="width=device-width">
+    <meta name="generator" content="jekyll">
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="/assets/app-9aa3a556c9ebe2ef114ae4f7c999c4cf.css">
+  </head>
+  <body>
+
+    <!-- the navbar -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/" style="padding-top:13px;"><img src="/assets/logo-96830a896d17c4acb9e93cedf8456a69.png"></a>
+        </div>
+        <div class="navbar-collapse collapse" id="nav">
+          <ul class="nav navbar-nav navbar-right buttonstopbar" style="font-size:12px;">
+            <li><a href="https://www.review.ninja">ABOUT</a></li>
+            <!-- <li><a href="https://enterprise.review.ninja">ENTERPRISE</a></li> -->
+            <li><a href="http://app.review.ninja/auth/github" class="btn btn-link" style="text-align: left; font-size: 18px;">Sign in</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="container-fluid">
+
+      <div class="row" style="margin-bottom:20px;">
+        <div class="col-md-2 pull-right" style="padding:0;"></div>
+        <div class="col-md-2 col-xs-12 pull-right" style="padding:0;">
+
+          <div class="list-group">
+            <a href="/" class="list-group-item ">Documentation</a>
+            <a href="/quickstart" class="list-group-item active">Quickstart</a>
+            <a href="/codereview" class="list-group-item ">Review Flags</a>
+            <a href="/stars" class="list-group-item ">Ninja Stars</a>
+            <a href="/notifications" class="list-group-item ">Notifications</a>
+            <a href="/slack" class="list-group-item ">Slack Integration</a>
+            <a href="/scopes" class="list-group-item ">GitHub OAuth Scope</a>
+          </div>
+
+          <div class="well" style="margin-right:1px;">
+            <p><small><a href="https://github.com/reviewninja/docs.review.ninja">This documentation is a repository on GitHub. Feel free to contribute.</a></small></p>
+            <p><small><a href="https://github.com/reviewninja/review.ninja/issues/new">If you have a question about ReviewNinja itself, go ahead and open an issue.</a></small></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-md-offset-2 col-xs-12 pull-left">
+          <h2 id="quickstart">Quickstart</h2>
+
+<p>The steps below detail how to get up and running with ReviewNinja, including a description of the basic workflow and the philosophy behind a ReviewNinja code review.</p>
+
+<h3 id="add-your-repository">Add your repository</h3>
+
+<p><img src="/assets/add-repo-63a7a14ff564c491b804b7bf91d3b821.png" width="100%" /></p>
+
+<p>To add a repository to ReviewNinja hit <i class="fa fa-plus-circle"></i> to reveal the search dialog, here you may search for a repository.</p>
+
+<p>To remove a repository, click <i class="fa fa-times"></i>.</p>
+
+<h3 id="basic-workflow">Basic Workflow</h3>
+
+<p>ReviewNinja is a code review tool built for pull requests. We suggest adopting the <a href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">Git Flow Workflow</a>, but ReviewNinja can be adapted for any workflow as long as pull requests are used.</p>
+
+<p>ReviewNinja provides two mechanisms for conducting code review. <a href="/stars"><strong>Ninja stars</strong></a> indicate approval, and <a href="/codereview"><strong>review flags</strong></a> specify a specific problem that needs to be resolved before the pull request should be merged.</p>
+
+<blockquote>
+  <p><strong>ProTip:</strong> ReviewNinja integrates well into the <a href="https://guides.github.com/introduction/flow/index.html">GitHub Flow</a>.</p>
+</blockquote>
+
+<h3 id="merge-with-confidence">Merge with Confidence</h3>
+
+<p>The Merge Pull Request button changes color to indicate the level of confidence in the merge.</p>
+
+<p><img src="/assets/pull-good-b1560723bc041e58dfc320ecab685e3b.png" width="33%" class="pull-left" /></p>
+
+<p><img src="/assets/pull-pending-f6fb12c6adb2e83690ce57bb466d871c.png" width="33%" class="pull-left" /></p>
+
+<p><img src="/assets/pull-bad-0700d671cfe0e7d379d613d64b02765d.png" width="33%" /></p>
+
+<h3 id="ignoring-files">Ignoring files</h3>
+
+<p>A <code>.ninjaignore</code> file specifies which files should be ignored by ReviewNinja. Each line specifies a file pattern, just like a <a href="http://git-scm.com/docs/gitignore">.gitignore file</a>.</p>
+
+<p>Please note, ignored files will be minimized by default and still available for inspection in ReviewNinja.</p>
+
+<h3 id="collaboration">Collaboration</h3>
+
+<p>Keep track of your team’s activity via the Team Tab. The Team Tab displays each collaborator and their contributions, including the number of ninja stars added, number of review threads opened, and the number of pull requests merged.</p>
+
+<p>The Team Tab also allows you to invite repository collaborators to ReviewNinja.</p>
+
+
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+    <script src="/assets/app-6624687230c8822bf9a55359bf3b9006.js"></script>
+  </body>
+</html>

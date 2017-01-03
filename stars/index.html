@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ReviewNinja Documentation</title>
+    <meta name="description" content="ReviewNinja documentation">
+    <meta name="viewport" content="width=device-width">
+    <meta name="generator" content="jekyll">
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="/assets/app-9aa3a556c9ebe2ef114ae4f7c999c4cf.css">
+  </head>
+  <body>
+
+    <!-- the navbar -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/" style="padding-top:13px;"><img src="/assets/logo-96830a896d17c4acb9e93cedf8456a69.png"></a>
+        </div>
+        <div class="navbar-collapse collapse" id="nav">
+          <ul class="nav navbar-nav navbar-right buttonstopbar" style="font-size:12px;">
+            <li><a href="https://www.review.ninja">ABOUT</a></li>
+            <!-- <li><a href="https://enterprise.review.ninja">ENTERPRISE</a></li> -->
+            <li><a href="http://app.review.ninja/auth/github" class="btn btn-link" style="text-align: left; font-size: 18px;">Sign in</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="container-fluid">
+
+      <div class="row" style="margin-bottom:20px;">
+        <div class="col-md-2 pull-right" style="padding:0;"></div>
+        <div class="col-md-2 col-xs-12 pull-right" style="padding:0;">
+
+          <div class="list-group">
+            <a href="/" class="list-group-item ">Documentation</a>
+            <a href="/quickstart" class="list-group-item ">Quickstart</a>
+            <a href="/codereview" class="list-group-item ">Review Flags</a>
+            <a href="/stars" class="list-group-item active">Ninja Stars</a>
+            <a href="/notifications" class="list-group-item ">Notifications</a>
+            <a href="/slack" class="list-group-item ">Slack Integration</a>
+            <a href="/scopes" class="list-group-item ">GitHub OAuth Scope</a>
+          </div>
+
+          <div class="well" style="margin-right:1px;">
+            <p><small><a href="https://github.com/reviewninja/docs.review.ninja">This documentation is a repository on GitHub. Feel free to contribute.</a></small></p>
+            <p><small><a href="https://github.com/reviewninja/review.ninja/issues/new">If you have a question about ReviewNinja itself, go ahead and open an issue.</a></small></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-md-offset-2 col-xs-12 pull-left">
+          <h2 id="ninja-stars">Ninja Stars</h2>
+
+<p>Ninja stars are ReviewNinja’s approval mechanism. A simple ninja star acts as <br />
+an indicator that you believe a pull request is ready to be merged.</p>
+
+<p>ReviewNinja is built on meritocracy, wherever you see a ninja star, you will<br />
+also a picture of the person who gave that star.</p>
+
+<p><strong>Note</strong>: Ninja stars are tied to the head commit of a pull request. When<br />
+the head commit changes (new commits, rebase, etc.) the ninja stars will be<br />
+reset to zero, this is necessary due to the ever-changing nature of a pull<br />
+request. In order to avoid re-reviews we suggest clearly indicating when no <br />
+more commits are expected on a pull request, and therefore a review can be<br />
+conducted (for example, with labels).</p>
+
+<p>There are a few ways to ninja star a pull request. The simplest method to add <br />
+a ninja star is to click the star button in ReviewNinja.</p>
+
+<p><img src="/assets/star-people-0c9bb49d68f7a94386d4f2d82aae26b0.png" width="40%" /></p>
+
+<p>Additionally, you can give a ninja star by adding one of the following to a<br />
+conversation comment on a pull request in either GitHub or ReviewNinja:<br />
+<img src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png?v5" alt=":+1:" width="24px" /><br />
+<img src="https://assets-cdn.github.com/images/icons/emoji/unicode/2b50.png?v5" alt=":star:" width="24px" /><br />
+<span class="label label-primary" style="font-size: 80%; font-weight: normal;">!star</span><br />
+<span class="label label-primary" style="font-size: 80%; font-weight: normal;">!ninjastar</span></p>
+
+<h3 id="ninja-star-threshold">Ninja Star Threshold</h3>
+
+<p>In your repo settings in ReviewNinja (<i class="fa fa-cog"></i>), you can define how many ninja stars <br />
+are required for a pull request status to be set to successfull.</p>
+
+<h3 id="review-team">Review Team</h3>
+
+<p>If your repo is under an organization, it is possible to specify a review<br />
+team. When you specify a review team, anyone may still star a pull request,<br />
+however, only stars from members of the review team will count towards the<br />
+threshold. Members of the review team are clearly indicated with a <i class="fa fa-check-circle text-success"></i>.</p>
+
+<p><strong>Note</strong>: It is possible for repo admins to have insufficient permissions<br />
+to see the review team (if it is a secret team). Because of this we <br />
+strongly suggest you make the review team visible to all members of your <br />
+organization.</p>
+
+<p><strong>Note</strong>: If members of the review team prefer starring from GitHub, they<br />
+will still need a ReviewNinja account in order for their stars to count <br />
+towards the threshold. Having an account is not necessary if no review <br />
+team has been specified, or the star is from a collaborator who is not on <br />
+the review team.</p>
+
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+    <script src="/assets/app-6624687230c8822bf9a55359bf3b9006.js"></script>
+  </body>
+</html>

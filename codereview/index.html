@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ReviewNinja Documentation</title>
+    <meta name="description" content="ReviewNinja documentation">
+    <meta name="viewport" content="width=device-width">
+    <meta name="generator" content="jekyll">
+
+    <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="/assets/app-9aa3a556c9ebe2ef114ae4f7c999c4cf.css">
+  </head>
+  <body>
+
+    <!-- the navbar -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/" style="padding-top:13px;"><img src="/assets/logo-96830a896d17c4acb9e93cedf8456a69.png"></a>
+        </div>
+        <div class="navbar-collapse collapse" id="nav">
+          <ul class="nav navbar-nav navbar-right buttonstopbar" style="font-size:12px;">
+            <li><a href="https://www.review.ninja">ABOUT</a></li>
+            <!-- <li><a href="https://enterprise.review.ninja">ENTERPRISE</a></li> -->
+            <li><a href="http://app.review.ninja/auth/github" class="btn btn-link" style="text-align: left; font-size: 18px;">Sign in</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <div class="container-fluid">
+
+      <div class="row" style="margin-bottom:20px;">
+        <div class="col-md-2 pull-right" style="padding:0;"></div>
+        <div class="col-md-2 col-xs-12 pull-right" style="padding:0;">
+
+          <div class="list-group">
+            <a href="/" class="list-group-item ">Documentation</a>
+            <a href="/quickstart" class="list-group-item ">Quickstart</a>
+            <a href="/codereview" class="list-group-item active">Review Flags</a>
+            <a href="/stars" class="list-group-item ">Ninja Stars</a>
+            <a href="/notifications" class="list-group-item ">Notifications</a>
+            <a href="/slack" class="list-group-item ">Slack Integration</a>
+            <a href="/scopes" class="list-group-item ">GitHub OAuth Scope</a>
+          </div>
+
+          <div class="well" style="margin-right:1px;">
+            <p><small><a href="https://github.com/reviewninja/docs.review.ninja">This documentation is a repository on GitHub. Feel free to contribute.</a></small></p>
+            <p><small><a href="https://github.com/reviewninja/review.ninja/issues/new">If you have a question about ReviewNinja itself, go ahead and open an issue.</a></small></p>
+          </div>
+        </div>
+        <div class="col-md-6 col-md-offset-2 col-xs-12 pull-left">
+          <h2 id="review-flags">Review Flags</h2>
+
+<p>Review Flags are simply textual comments that indicate a problem that needs to be resolved before a pull request is merged. ReviewNinja parses GitHub’s review comments for these flags and sets the pull request status accordingly. The available review flags are as follows:</p>
+
+<p><strong>To indicate a problem</strong></p>
+
+<p><span class="label label-warning">!fix</span><br />
+<span class="label label-warning">!resolve</span></p>
+
+<p><strong>To indicate a problem has been resolved</strong></p>
+
+<p><span class="label label-primary">!fixed</span><br />
+<span class="label label-primary">!resolved</span><br />
+<span class="label label-primary">!completed</span></p>
+
+<blockquote>
+  <p><strong>ProTip:</strong> Review flag comments can be made on lines of code in either GitHub or ReviewNinja. Collaborators who prefer GitHub can continue to work in their preferred environment and still participate in the code review. If ReviewNinja is used, shortcuts are provided for the creation of review flags.</p>
+</blockquote>
+
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+    <script src="/assets/app-6624687230c8822bf9a55359bf3b9006.js"></script>
+  </body>
+</html>
