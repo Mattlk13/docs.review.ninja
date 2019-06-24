@@ -11,7 +11,7 @@ gem 'respond-to'
 gem 'rubyzip'
 gem 'sass'
 gem 'uglifier'
-gem 'bootstrap-sass'
+gem 'bootstrap-sass', '>= 3.4.0'
 gem 'font-awesome-sass'
 gem 'webrick'
 
